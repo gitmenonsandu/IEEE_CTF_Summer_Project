@@ -1,0 +1,284 @@
+[2015-05-22 20:38:48] → mohit__ joined (uid85309@gateway/web/irccloud.com/x-ilzudlryesedfenn)
+[2015-05-22 20:38:49] → jugal joined (jugal@103.37.183.241)
+[2015-05-22 20:39:41] → PrabhanjanPM joined (~Prabhanja@61.3.101.250)
+[2015-05-22 20:40:52] → isha_97 joined (6a42810a@gateway/web/freenode/ip.106.66.129.10)
+[2015-05-22 20:42:23] → patel96 joined (~susheel@31.215.53.110)
+[2015-05-22 20:43:04] → ashwin joined (~ashwin@117.213.247.127)
+[2015-05-22 20:43:43] → anand16 joined (~Ananda@117.221.109.51)
+[2015-05-22 20:45:13] ⇐ isha_97 quit (6a42810a@gateway/web/freenode/ip.106.66.129.10): Ping timeout: 246 seconds
+[2015-05-22 20:47:04] → chinmay_dd joined (~AndChat98@1.39.80.120)
+[2015-05-22 20:48:11] → Divija joined (6ee33570@gateway/web/freenode/ip.110.227.53.112)
+[2015-05-22 20:48:21] <chinmay_dd> Hello all! I am currently afk. kbhat will be joining you soon. :)
+[2015-05-22 20:48:26] → isha_97 joined (6a42810a@gateway/web/freenode/ip.106.66.129.10)
+[2015-05-22 20:49:00] <chinmay_dd> Till them
+[2015-05-22 20:49:05] <chinmay_dd> *then
+[2015-05-22 20:49:09] <chinmay_dd> Whatsssup
+[2015-05-22 20:49:32] → vikrantwd joined (~vikrant@122.161.163.252)
+[2015-05-22 20:49:41] <chinmay_dd> Am I even connected?
+[2015-05-22 20:49:49] <anand16> yes
+[2015-05-22 20:49:59] <patel96> yup
+[2015-05-22 20:50:00] <mohit__> Yes
+[2015-05-22 20:50:04] <chinmay_dd> Lol ok
+[2015-05-22 20:50:14] <vikrantwd> you're not admin though...
+[2015-05-22 20:50:32] <chinmay_dd> I am afk. Connected via phone
+[2015-05-22 20:50:48] <mohit__> Same here
+[2015-05-22 20:50:53] <mohit__> Via phone
+[2015-05-22 20:51:03] <vikrantwd> oh...how does that work? hexchat app?
+[2015-05-22 20:51:15] <patel96> andchat
+[2015-05-22 20:51:20] <jugal> which app??
+[2015-05-22 20:51:27] <mohit__> Irccloud
+[2015-05-22 20:51:28] <chinmay_dd> AndChat
+[2015-05-22 20:51:28] <isha_97> using browser in ur phone
+[2015-05-22 20:51:40] <patel96> andchat app
+[2015-05-22 20:51:42] <chinmay_dd> No no
+[2015-05-22 20:51:59] <chinmay_dd> Its pretty lightweight and nice
+[2015-05-22 20:52:10] <mohit__> patel96:  irccloud app is there check it out
+[2015-05-22 20:52:17] <chinmay_dd> Nah
+[2015-05-22 20:52:22] <chinmay_dd> This is fine :p
+[2015-05-22 20:52:28] <patel96> nah.yeah true
+[2015-05-22 20:52:36] <patel96> i like andchat
+[2015-05-22 20:52:39] <chinmay_dd> Anyone watching match?
+[2015-05-22 20:53:05] <patel96> will stream it after dinner
+[2015-05-22 20:53:08] → eeshwar joined (~ubuntu@59.97.24.178)
+[2015-05-22 20:53:13] <chinmay_dd> No one?
+[2015-05-22 20:53:16] <Divija> me
+[2015-05-22 20:53:20] <jugal> nope..
+[2015-05-22 20:53:22] <kushal_g_> me
+[2015-05-22 20:53:23] <chinmay_dd> That's dedication
+[2015-05-22 20:53:26] <chinmay_dd> XD
+[2015-05-22 20:53:41] <chinmay_dd> Hahahaha
+[2015-05-22 20:53:44] <chinmay_dd> Cool..
+[2015-05-22 20:53:58] <chinmay_dd> So did you guys note down your doubts for rev?
+[2015-05-22 20:54:12] <chinmay_dd> And read the resources?
+[2015-05-22 20:54:41] <chinmay_dd> They were little big
+[2015-05-22 20:54:49] <jugal> haven't finished yet
+[2015-05-22 20:55:05] <kbhat> Hello. :)
+[2015-05-22 20:55:20] <kbhat> First off, as chinmay_dd said, any doubts from the previous session?
+[2015-05-22 20:56:32] <kbhat> Alright.
+[2015-05-22 20:57:11] <kbhat> Today we'll be looking at SQL and SQL injection, and briefly talk about OS injection.
+[2015-05-22 20:57:20] <kbhat> How many of you already know SQL?
+[2015-05-22 20:57:27] <Divija> me
+[2015-05-22 20:57:29] <kbhat> Maybe from 11th / 12th?
+[2015-05-22 20:57:33] <isha_97> me
+[2015-05-22 20:57:55] <ashwin> I dont remember it properly.
+[2015-05-22 20:58:01] <jugal> read a little bit..dont remember mch...
+[2015-05-22 20:58:03] * ChanServ set +o chinmay_dd
+[2015-05-22 20:58:03] <patel96> looked it up today
+[2015-05-22 20:59:04] <kbhat> Cool. So, the above people ^ can answer the others' doubts. :P
+[2015-05-22 20:59:10] <kbhat> Let's begin.
+[2015-05-22 20:59:20] <kbhat> SQL stands for Structured Query Language. 
+[2015-05-22 21:00:04] <kbhat> It is said to be Structured because there isn't a whole lot of flexibility; commands in SQL are pretty strict and hardly have any variations, syntax-wise.
+[2015-05-22 21:00:23] <kbhat> Query means to ask a question; so who are we asking these questions to?
+[2015-05-22 21:00:36] <kbhat> SQL is a language used to "talk" to a database.
+[2015-05-22 21:01:15] <kbhat> Now, there are a number of different types of database management systems; SQL interfaces with one of them, i.e., relational databases.
+[2015-05-22 21:01:55] <kbhat> They are said to be relational because such a database consists of a number of tables, and relations are established as relations between these tables
+[2015-05-22 21:02:13] <kbhat> Each table consists of a number of rows and columns.
+[2015-05-22 21:03:01] <kbhat> Here's an example of a RDBMS: http://www.fish.govt.nz/NR/rdonlyres/DF8E69F9-BC06-4BB9-A7D5-DD9A93884893/1300/database.gif
+[2015-05-22 21:03:12] <kbhat> And relax, it just looks complicated. It isn't.
+[2015-05-22 21:03:41] <kbhat> Now, you can see a number of tables, and they are all interrelated somehow.
+[2015-05-22 21:04:02] <kbhat> Inside the boxes, you can see the *fields* of that table. These are represented as columns.
+[2015-05-22 21:04:29] <kbhat> An entry in such a table will take up one row, and will have values (or null) for each of these columns.
+[2015-05-22 21:05:19] → isha97 joined (6a42810a@gateway/web/freenode/ip.106.66.129.10)
+[2015-05-22 21:05:20] <kbhat> So for example: an entry in t_sol (left side) will have attributes (columns) : yr, month, sol and month1.
+[2015-05-22 21:05:24] <kbhat> Any questions?
+[2015-05-22 21:05:55] → ajithps joined (uid73521@gateway/web/irccloud.com/x-xntriynvxongjfxy)
+[2015-05-22 21:06:03] <jugal> no
+[2015-05-22 21:06:42] <kbhat> Okay. We use SQL to issue queries against a RDBMS server, and that server responds with a subset of these tables in response to our query.
+[2015-05-22 21:06:54] <kbhat> So how are SQL statements constructed?
+[2015-05-22 21:07:13] <kbhat> http://www.w3resource.com/sql/sql-syntax.php
+[2015-05-22 21:07:37] ⇐ isha_97 quit (6a42810a@gateway/web/freenode/ip.106.66.129.10): Ping timeout: 246 seconds
+[2015-05-22 21:07:55] <kbhat> There's a <seemingly> lot of material there.
+[2015-05-22 21:08:09] <kbhat> But all you need to keep in mind (for now, anyway) is this general rule:
+[2015-05-22 21:08:44] <kbhat> SELECT <columns> FROM <table> WHERE <condition(s)> ORDER BY <column-name(s)>;
+[2015-05-22 21:09:28] <kbhat> So I'd like everyone to find those keywords and read up about them. Please try to finish this by 9:20, and we'll move on.
+[2015-05-22 21:20:44] <kbhat> Everyone done?
+[2015-05-22 21:20:50] <kbhat> If not, here's a quick summary:
+[2015-05-22 21:21:12] <PrabhanjanPM> the from clause is quite extensive
+[2015-05-22 21:21:39] <kbhat> SELECT <columns> --> this says, fetch the given fields
+[2015-05-22 21:22:02] <kbhat> FROM <table> --> specifies which table to look at when searching for the given columns.
+[2015-05-22 21:22:13] <kbhat> PrabhanjanPM: agreed. We'll touch upon only the basic use-cases.
+[2015-05-22 21:22:45] <kbhat> WHERE <condition(s)> --> this allows us to *filter* the results we get, by applying certain conditions.
+[2015-05-22 21:24:23] <kbhat> For example, we might want to get only those rows where the username is 'kbhat'. So you might do something like:
+[2015-05-22 21:24:50] <kbhat> SELECT * FROM users WHERE username = 'kbhat';
+[2015-05-22 21:25:27] <kbhat> Of course, this will generally return only one row, since the usual practice is to make columns / fields like username, user id, etc. as *unique* fields.
+[2015-05-22 21:25:38] <kbhat> This means that no two rows can have the same value for those fields.
+[2015-05-22 21:26:23] <kbhat> ORDER BY <...> --> this will arrange the output in either ascending or descending order of the column(s) specified.
+[2015-05-22 21:26:29] <kbhat> Questions on the above? 
+[2015-05-22 21:26:40] <jugal> nope
+[2015-05-22 21:26:41] <vikrantwd> no
+[2015-05-22 21:26:44] <sandeepmenon> no
+[2015-05-22 21:26:47] <patel96> nada
+[2015-05-22 21:27:00] <mohit__> No
+[2015-05-22 21:27:53] <kbhat> Ok. So, now that we have a basic idea of SQL, what might SQL injection be?
+[2015-05-22 21:28:27] <patel96> injecting SQL code in some form or textfield to query database
+[2015-05-22 21:28:40] <kbhat> Right.
+[2015-05-22 21:28:45] <sandeepmenon> to access data by sql a=commands
+[2015-05-22 21:28:56] <kbhat> https://www.irccloud.com/pastebin/RKre2QZa/simple+html+login+screen
+[2015-05-22 21:29:00] <sandeepmenon> sql commands*
+[2015-05-22 21:29:08] <kbhat> Suppose we have a simple login form like this.
+[2015-05-22 21:29:39] <kbhat> I mentioned that SQL is used for RDBMS's.
+[2015-05-22 21:29:57] <kbhat> So we can't use it if the database that our values are being entered into is not a relational one.
+[2015-05-22 21:30:23] <kbhat> Now, given a form such as this, how do we begin trying to find out if we can put in some SQL?
+[2015-05-22 21:30:33] ⇐ chinmay_dd quit (~AndChat98@1.39.80.120): Ping timeout: 240 seconds
+[2015-05-22 21:30:43] <kbhat> Even before that, *why* would we want to inject SQL?
+[2015-05-22 21:30:58] <patel96> to gain some kind of access
+[2015-05-22 21:31:06] <eeshwar> to add data?
+[2015-05-22 21:31:18] <anand16> to fetch data
+[2015-05-22 21:31:24] <jugal> to change the SQL statement and gain access to info which is denied
+[2015-05-22 21:31:26] <kbhat> eeshwar: and what kind of data would you add?
+[2015-05-22 21:31:26] <mohit__> To get access to data
+[2015-05-22 21:31:35] <jugal> passwords??
+[2015-05-22 21:31:41] <kbhat> jugal: change the SQL statement? O.o What does that mean?
+[2015-05-22 21:31:44] <eeshwar> data to expand the database
+[2015-05-22 21:31:57] <kbhat> jugal: oh, I got what you meant. Cool. 
+[2015-05-22 21:32:08] <kbhat> eeshwar: and what will you do with that? :P
+[2015-05-22 21:32:24] <kbhat> I can simply "expand" the database by registering some 1000 users.
+[2015-05-22 21:32:29] <eeshwar> some mischief?
+[2015-05-22 21:32:35] <isha97> to fetch database contents to the attacker ?
+[2015-05-22 21:33:10] <kbhat> Okay.
+[2015-05-22 21:33:26] <kbhat> For one, databases often store usernames and passwords.
+[2015-05-22 21:33:39] <kbhat> Apart from that, there might be some other interesting fields as well.
+[2015-05-22 21:33:58] <kbhat> I'll more or less be following this : https://en.wikipedia.org/wiki/SQL_injection
+[2015-05-22 21:34:02] → PMannari joined (~Prabhanja@117.192.222.13)
+[2015-05-22 21:34:28] ⇐ PrabhanjanPM quit (~Prabhanja@61.3.101.250): Ping timeout: 255 seconds
+[2015-05-22 21:34:44] <Divija> but arent they hashed?so they wont be of any use
+[2015-05-22 21:35:36] <kbhat> Divija: usually. But in CTFs, they usually aren't. CTFs are designed so that you *can* do something with the data you get.
+[2015-05-22 21:35:54] <kbhat> In the modern day world, SQL injections have been almost completely wiped out.
+[2015-05-22 21:36:10] <Divija> oh.okay.
+[2015-05-22 21:36:26] <vikrantwd> how so?
+[2015-05-22 21:36:31] <kbhat> This has been done by an adoption of non-relational databases, hashing, as well as strong counter-mechanisms and sandboxing.
+[2015-05-22 21:36:47] <vikrantwd> oh
+[2015-05-22 21:37:15] <PMannari> kbhat: sanitizing the input can also be used ?
+[2015-05-22 21:37:22] <kbhat> As far as we'll go today, there are two main types of SQLi.
+[2015-05-22 21:37:25] <kbhat> PMannari: correct.
+[2015-05-22 21:37:33] <kbhat> PMannari: what does that mean, though? ;)
+[2015-05-22 21:37:35] <patel96> Whats that??
+[2015-05-22 21:37:48] <Divija> what is that?
+[2015-05-22 21:38:14] <PMannari> like the " is not given any special importance n is treated as just any other character ?
+[2015-05-22 21:38:22] <patel96> ??
+[2015-05-22 21:38:26] <vikrantwd> wut?
+[2015-05-22 21:39:12] <kbhat> For example, look at that wiki page again.
+[2015-05-22 21:39:14] <kbhat> statement = "SELECT * FROM users WHERE name ='" + userName + "';"
+[2015-05-22 21:39:43] <kbhat> The above statement tries to select all rows from the 'users' table where the name matches the contents of the userName variable.
+[2015-05-22 21:40:10] <kbhat> But, if we're allowed to pass characters like " in our userName variable, we can wreak havoc.
+[2015-05-22 21:40:28] <kbhat> What will happen if userName starts with "?
+[2015-05-22 21:40:47] <patel96> it will break the query
+[2015-05-22 21:41:19] <sandeepmenon> it'll act as part of the querry
+[2015-05-22 21:41:44] <kbhat> Right; this is the heart of SQLi. You pass in data specially crafted so that you yourself are in a position to enter SQL statements.
+[2015-05-22 21:41:53] <kbhat> Check out the examples on that page again.
+[2015-05-22 21:41:59] <kbhat> ' OR 1=1
+[2015-05-22 21:42:04] <kbhat> why is this a useful input?
+[2015-05-22 21:42:15] <jugal> because it is always true
+[2015-05-22 21:42:32] <sandeepmenon> yeah
+[2015-05-22 21:42:44] <sandeepmenon> or true evaluates to true
+[2015-05-22 21:42:56] <kbhat> So that'll cause the above statement to be converted into something of the form:
+[2015-05-22 21:42:57] <kbhat> SELECT * FROM users WHERE name = '' OR '1'='1';
+[2015-05-22 21:43:10] <kbhat> Which gives us all users in the table!!
+[2015-05-22 21:44:05] <kbhat> As you can see, we can also do things like drop the table, alter tables, maybe (as eeshwar mentioned) add a new table to get us "backdoor" access.
+[2015-05-22 21:45:21] <kbhat> In "classical" SQLi, we can directly see the results of our injection.
+[2015-05-22 21:45:27] <kbhat> But this is not always the case.
+[2015-05-22 21:46:12] <kbhat> In blind SQL injection, a completely different page might load. In fact, this is the case in most websites.
+[2015-05-22 21:46:52] <kbhat> When you login to Quora, you see your feed. If you entered something wrong, it'll reload the login with a prompt saying that something went wrong.
+[2015-05-22 21:47:16] <kbhat> So in blind SQLi, it is up to you to *infer* from the pages that get loaded whether your injection worked or not.
+[2015-05-22 21:47:23] <kbhat> Is everyone following?
+[2015-05-22 21:47:42] <patel96> yup
+[2015-05-22 21:47:55] <sandeepmenon> yes
+[2015-05-22 21:47:59] <jugal> no..
+[2015-05-22 21:48:00] <vikrantwd> how exactly are we entering anything?
+[2015-05-22 21:48:22] <jugal> about the loading of different page in blind sqli??
+[2015-05-22 21:49:24] <vikrantwd> and what is blind sqli?
+[2015-05-22 21:49:55] <kbhat> vikrantwd: there will be a form, for login. In other cases, you might observe that pages get loaded with a parameter, such as "?page=3". SQLi sometimes works there as well.
+[2015-05-22 21:50:01] → chinmay_dd joined (~chinmay_d@203.115.76.68)
+[2015-05-22 21:50:01] * ChanServ set +o chinmay_dd
+[2015-05-22 21:50:20] <kbhat> vikrantwd: you have a whole Wikipedia link there talking about blind SQLi. -_- 
+[2015-05-22 21:50:44] <kbhat> jugal: what exactly are you asking?
+[2015-05-22 21:51:20] <vikrantwd> dammit i didn't read it properly
+[2015-05-22 21:52:02] <jugal> i didnt understand the statement u quoted bout "it is upto us to infer from pages that gets loaded whether injection worked or nt"
+[2015-05-22 21:53:48] <kbhat> Ah. So suppose you enter an SQL statement in the input / as a parameter, and see that a different page gets loaded as opposed to when no SQL statement is given. Then you know that the site is vulnerable to SQLi.
+[2015-05-22 21:54:45] <jugal> kbhat: ohk got it.. :)
+[2015-05-22 21:55:55] ⇐ isha97 quit (6a42810a@gateway/web/freenode/ip.106.66.129.10): Ping timeout: 246 seconds
+[2015-05-22 21:55:57] <kbhat> So that wraps up SQL injection from a birds-eye view. We'll be posting more resources which you can follow.
+[2015-05-22 21:58:07] <kbhat> So, if that's SQL injection, one might think that OS injection is getting our own OS into someone else's code!
+[2015-05-22 21:58:42] <kbhat> This is inaccurate; but not far from the idea.
+[2015-05-22 21:59:18] <kbhat> SQLi can be consider a subset of OSi. OSi involves being able to : run our own commands on another person's server, calling other applications on their system, etc.
+[2015-05-22 21:59:27] <kbhat> Check this out: https://www.owasp.org/index.php/OS_Injection
+[2015-05-22 22:01:18] <kbhat> Honestly speaking, I haven't come across many OSi type challenges in CTFs, so whatever I know is limited to the extent of that page.
+[2015-05-22 22:02:44] <chinmay_dd> Okay. so
+[2015-05-22 22:02:59] <chinmay_dd> I went through your repos again today.
+[2015-05-22 22:03:06] <chinmay_dd> Very disappointing
+[2015-05-22 22:03:33] <chinmay_dd> Whatever we are giving you is not much work at all.
+[2015-05-22 22:03:59] <chinmay_dd> The XOR code is actually some 3 lines in Py and 10 lines in C
+[2015-05-22 22:04:37] <chinmay_dd> Please format your repos properly and keep yourself upbeat with the portion
+[2015-05-22 22:04:57] <chinmay_dd> So, here we end our first week
+[2015-05-22 22:05:10] <chinmay_dd> Any feedback?
+[2015-05-22 22:05:15] <chinmay_dd> Suggestions?
+[2015-05-22 22:05:21] ⇐ kushal_g_ quit (~kushal_16@122.167.7.225): Ping timeout: 240 seconds
+[2015-05-22 22:06:15] <chinmay_dd> ?
+[2015-05-22 22:06:21] <chinmay_dd> y/n
+[2015-05-22 22:06:27] <PMannari> this format is cool !
+[2015-05-22 22:06:33] <patel96> yup
+[2015-05-22 22:06:37] <jugal> yeah
+[2015-05-22 22:06:38] <eeshwar> yeah
+[2015-05-22 22:07:09] <mohit__> Yeah the sessions are going fine.
+[2015-05-22 22:07:10] <chinmay_dd> kewl.
+[2015-05-22 22:07:11] <sandeepmenon> yes
+[2015-05-22 22:08:16] <chinmay_dd> Okay, then
+[2015-05-22 22:08:18] <kbhat> We'll have SQLi resources up by tomorrow morning. 
+[2015-05-22 22:08:35] <kbhat> Enjoy the weekend; next week is going to be refreshingly hands-on!
+[2015-05-22 22:08:56] <chinmay_dd> We are very excited for the rev session by sushant94.
+[2015-05-22 22:09:12] <chinmay_dd> Radare2 is fairly new to kbhat and me as well.
+[2015-05-22 22:09:38] <chinmay_dd> Enjai!
+[2015-05-22 22:09:38] <sushant94> :)
+[2015-05-22 22:13:24] ⇐ chinmay_dd quit (~chinmay_d@203.115.76.68): 
+[2015-05-22 22:13:37] ← mohit__ left (uid85309@gateway/web/irccloud.com/x-ilzudlryesedfenn)
+[2015-05-22 22:13:47] ← eeshwar left (~ubuntu@59.97.24.178)
+[2015-05-22 22:13:52] ⇐ Divija quit (6ee33570@gateway/web/freenode/ip.110.227.53.112): Quit: Page closed
+[2015-05-22 22:13:58] ⇐ patel96 quit (~susheel@31.215.53.110): Quit: Leaving
+[2015-05-22 22:14:08] ← PMannari left (~Prabhanja@117.192.222.13)
+[2015-05-22 22:14:12] ⇐ sandeepmenon quit (~sandukutt@117.217.156.54): Quit: Leaving
+[2015-05-22 22:14:15] ⇐ ashwin quit (~ashwin@117.213.247.127): Quit: Leaving
+[2015-05-22 22:15:47] → patel96 joined (~susheel@31.215.53.110)
+[2015-05-22 22:16:42] ⇐ vikrantwd quit (~vikrant@122.161.163.252): Quit: Leaving
+[2015-05-22 22:16:51] ⇐ patel96 quit (~susheel@31.215.53.110): Client Quit
+[2015-05-22 22:18:47] ⇐ amit705 quit (0117e267@gateway/web/freenode/ip.1.23.226.103): Quit: Page closed
+[2015-05-22 22:21:51] → kushal_g_ joined (~kushal_16@106.197.210.236)
+[2015-05-22 22:23:01] ⇐ kushal_g_ quit (~kushal_16@106.197.210.236): Client Quit
+[2015-05-22 22:30:31] ⇐ anand16 quit (~Ananda@117.221.109.51): Quit: Leaving
+[2015-05-22 22:42:27] ⇐ jugal quit (jugal@103.37.183.241): Quit: Leaving
+[2015-05-23 00:35:25] → kushal_g_ joined (~kushal_16@223.187.202.251)
+[2015-05-23 00:56:19] → kushal_g joined (~kushal-97@223.187.202.251)
+[2015-05-23 00:58:03] ⇐ kushal_g quit (~kushal-97@223.187.202.251): Remote host closed the connection
+[2015-05-23 01:04:12] ⇐ kushal_g_ quit (~kushal_16@223.187.202.251): Ping timeout: 265 seconds
+[2015-05-23 01:59:57] ⇐ kbhat quit (uid54867@gateway/web/irccloud.com/x-arwdzmhqzogyxmda): Quit: Connection closed for inactivity
+[2015-05-23 01:59:57] * Connection closed for inactivity
+[2015-05-23 01:59:57] * Socket closed
+[2015-05-23 18:46:05] → Joined channel #ieee-ctf
+[2015-05-23 18:46:05] * ChanServ set +o kbhat
+[2015-05-23 18:46:05] * Channel mode is +cnt
+[2015-05-23 18:46:05] * Channel timestamp is 1430743990
+[2015-05-23 19:40:28] ⇐ chinmay_dd quit (~chinmay_d@182.74.235.234): 
+[2015-05-23 20:15:12] → patel joined (~AndChat73@2.51.161.86)
+[2015-05-23 20:15:42] ⇐ patel quit (~AndChat73@2.51.161.86): Client Quit
+[2015-05-23 21:27:42] → patel joined (~AndChat73@2.51.161.86)
+[2015-05-23 21:27:56] ⇐ patel quit (~AndChat73@2.51.161.86): Client Quit
+[2015-05-23 22:04:18] → patel joined (~AndChat73@2.51.161.86)
+[2015-05-23 22:04:32] ⇐ patel quit (~AndChat73@2.51.161.86): Client Quit
+[2015-05-23 22:09:20] ⇐ anand16 quit (~Ananda@117.198.112.16): Quit: Leaving
+[2015-05-23 22:52:17] → patel joined (~AndChat73@2.51.161.86)
+[2015-05-23 22:52:35] ⇐ patel quit (~AndChat73@2.51.161.86): Client Quit
+[2015-05-24 09:23:20] → chinmay_dd joined (~chinmay_d@203.115.76.68)
+[2015-05-24 09:23:21] * ChanServ set +o chinmay_dd
+[2015-05-24 09:43:32] ⇐ chinmay_dd quit (~chinmay_d@203.115.76.68): Remote host closed the connection
+[2015-05-24 09:44:35] → chinmay_dd joined (~chinmay_d@203.115.76.68)
+[2015-05-24 09:44:35] * ChanServ set +o chinmay_dd
+[2015-05-24 10:39:41] ⇐ chinmay_dd quit (~chinmay_d@203.115.76.68): Remote host closed the connection
+[2015-05-24 10:45:56] → chinmay_dd joined (~chinmay_d@203.115.76.68)
+[2015-05-24 10:45:56] * ChanServ set +o chinmay_dd
+[2015-05-24 11:06:15] ⇐ chinmay_dd quit (~chinmay_d@203.115.76.68): 
+[2015-05-24 15:29:58] ⇐ kbhat quit (uid54867@gateway/web/irccloud.com/x-hkfzxabvvhfuashb): Quit: Connection closed for inactivity
+[2015-05-24 15:29:58] * Connection closed for inactivity
+[2015-05-24 15:29:58] * Socket closed
+[2015-05-24 20:09:51] → Joined channel #ieee-ctf
+[2015-05-24 20:09:51] * ChanServ set +o kbhat
+[2015-05-24 20:09:51] * Channel mode is +cnt
+[2015-05-24 20:09:51] * Channel timestamp is 1430743990

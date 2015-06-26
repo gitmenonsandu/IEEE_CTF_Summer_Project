@@ -1,0 +1,457 @@
+20:53 kbhat: So, everybody ready? Today's <technically> the first session, and we haven't allocated much, so assuming you're all ready to go, this shouldn't take long.
+20:53 patel: ok
+20:53 kbhat: What topic are we doing today?
+20:54 k33r7h4n: html and web servers
+20:54 kbhat: (y)
+20:54 kbhat: Has anyone *not* read whatever they were supposed to? I'm assuming IRC's fine since you're here.
+20:55 kbhat: Okay. Everyone on Linux?
+20:55 patel: yup
+20:55 mohit__: Yeah
+20:56 eeshwar: yup
+20:56 k33r7h4n: yeah
+20:56 sandeepmenon: yes
+20:56 ashwin: yes
+20:56 divija: yeah
+20:56 chinmay_dd: kbhat: interrupting you. sorry for that
+20:56 ar16: yeah
+20:56 chinmay_dd: So guys the sessions will follow a set pattern
+20:56 kbhat: chinmay_dd: -_- Such apology.
+20:56 kushal_g_:  yes
+20:56 sangeetha: yes
+20:56 chinmay_dd: We will be starting off on the topic
+20:56 chinmay_dd: and then giving you resources to read up
+20:57 chinmay_dd: we EXPECT you to read sincerely and not skim through
+20:57 chinmay_dd: also
+20:57 divija: okay.
+20:57 chinmay_dd: when we are typing something and unless you have a doubt we dont expect you to type "ok", "yes"
+20:58 patel: ok
+20:58 kbhat: :D
+20:58 k33r7h4n: lol
+20:58 chinmay_dd: that breaks the flow of our typing
+20:58 chinmay_dd: ^that
+20:58 chinmay_dd: since some people wont be able to join somedays it is important that they find the chat good enough to read
+20:59 chinmay_dd: also, the resources we will be sharing are not first page google results(they may be)
+20:59 chinmay_dd: so do read them with care
+20:59 chinmay_dd: Secondly.
+21:00 chinmay_dd: We want you guys to get familiar with version control.
+21:00 chinmay_dd: We can have an extra session if it is really needed but we want you guys to learn git this week
+21:00 chinmay_dd: third
+21:01 k33r7h4n has left IRC (Remote host closed the connection)
+21:01 chinmay_dd: having a language like C, C++ or Java in your armoury is always nice
+21:01 chinmay_dd: but it is also important that you know one ( or more )of Ruby, Python and JS
+21:02 divija has left IRC (Ping timeout: 246 seconds)
+21:02 chinmay_dd: they are really powerful and have a variety of applications
+21:02 chinmay_dd: now, any doubts?
+21:02 ar16: no
+21:02 kushal_g_: no
+21:02 patel: nope
+21:02 mohit__: No
+21:02 sandeepmenon: no
+21:02 k33r7h4n has joined (~keerthans@117.192.165.46)
+21:02 chinmay_dd: Cool. So kbhat want to add anything else?
+21:03 kbhat: We don't expect you to learn these in a day or two; take your time, but at least be able to read code in these languages by mid-June. That'll enable us to get to some really interesting code challenges, etc.
+21:03 vikrantwd has joined (~vikrant@122.161.75.173)
+21:03 divija has joined (31c874d1@gateway/web/freenode/ip.49.200.116.209)
+21:03 kbhat: Oh, wait; it's mid-May. Okay, be able to code well in one or two of these by then.
+21:03 vikrantwd: uh hi...am i late?
+21:04 kbhat: vikrantwd: sort of. Don't worry; you can always read the logs later.
+21:04 vikrantwd: ok thanks
+21:05 kbhat: Yes, one more thing. Is there anyone who is involved in more than two IEEE projects?
+21:05 patel: me
+21:05 amit705: me
+21:05 vikrantwd: me too
+21:05 chinmay_dd: so, three projects?
+21:05 amit705: no...only two...sry
+21:05 vikrantwd: oops not 3 i'm in 2
+21:05 chinmay_dd: patel ?
+21:05 patel: 2
+21:06 vikrantwd: XD
+21:06 chinmay_dd: ^dont want that
+21:06 sandeepmenon: two projects
+21:06 kbhat: Alright. So, let's actually get started.
+21:07 kbhat: Today, we'll be doing an intro to the web.
+21:07 kbhat: Open up terminal (ctrl + alt + t).
+21:08 kbhat: And use the following command: 'python -m SimpleHTTPServer'
+21:09 kbhat: Now, can someone tell me what happens?
+21:10 k33r7h4n: it says "Serving HTTP on 0.0.0.0 port 8000 .."
+21:10 vikrantwd: Serving HTTP on 0.0.0.0 port 8000 ...
+21:10 sandeepmenon: Serving HTTP on 0.0.0.0 port 8000 ... this came
+21:10 eeshwar: the same
+21:10 ar16: same
+21:10 ar16: same
+21:10 mohit__:  Same
+21:11 patel: yup
+21:11 kbhat: Okay. Once someone says it, you don't need to repeat it.
+21:11 kbhat: So, this one line introduces a world of concepts.
+21:11 kbhat: Okay, actually just three:
+21:11 kbhat: 1. HTTP
+21:12 kbhat: It stands for HyperText Transfer Protocol, and it is the set of rules that govern communication on the web.
+21:12 kbhat: I think chinmay_dd may have mentioned this, but: if we mention something here, it's your duty to find resources for it online.
+21:13 chinmay_dd: https://dev.opera.com/articles/http-basic-introduction/
+21:13 PrabhanjanPM has joined (Prabhanjan@117.221.30.137)
+21:14 kbhat: So, we'll be tossing in a few links as well. Please go through them before the next session. The summary (on Google Groups) will have a list of these links as well as the logs for the night, so don't worry about keeping track of them.
+21:15 kbhat: 2. 0.0.0.0
+21:15 kbhat: Anyone know what this means?
+21:15 patel: localhost
+21:15 vikrantwd: ip?
+21:16 patel: ip that my pc identifies myself
+21:16 kbhat: 0.0.0.0 is used to refer to all the IP addresses on the local machine.
+21:16 kbhat: patel: localhost is actually 127.0.0.1
+21:16 patel: oh.sorry.my bad
+21:17 kbhat: In any case, we can put this address to good use, as we shall see.
+21:17 kbhat: Open up a web browser and go to 0.0.0.0:8000
+21:18 sangeetha: Directory listing for /
+21:18 chinmay_dd: nice!
+21:18 vikrantwd: its my home folder
+21:19 kbhat: sangeetha: are you sure?
+21:19 patel: hey its home right?
+21:19 kbhat: on a linux system refers to the root directory. ~/ refers to the home directory.
+21:19 sangeetha: kbhat: yeah! why?
+21:19 sangeetha: ok :P
+21:20 kbhat: Depending on where you ran the command, you'll be seeing different things. Though if you just opened up terminal and ran it, you should be in 'home'.
+21:20 kbhat: * / on a linux system refers to the root directory.
+21:20 kbhat: Sorry. Side question: can anyone tell me why I didn't type that right the first time? :P
+21:21 vikrantwd: because its used for commands
+21:21 ajithps: maybe too early for that qtn kbhat ?
+21:21 patel: */ is used to pass commands
+21:21 ajithps: awesome!
+21:21 kbhat: ajithps: you underestimate them. :P
+21:21 ajithps: I am here to learn.
+21:21 kbhat: Exactly! Any message that starts with '/' is interpreted as a command in IRC.
+21:22 chinmay_dd: ------Guys, ajithps is also our final year mentor. :)---------
+21:22 kbhat: This "simple http server" can be used in hostel and anywhere where you're on the same network for speedy transfer of files.
+21:23 kbhat: PrabhanjanPM: welcome back. You might find this to be more or less the same as in December. :P
+21:23 kbhat: Okay, now the third part:
+21:23 kbhat: 3. 80 refers to the port on which the HTTP is being served.
+21:24 kbhat: Is anyone confused?
+21:24 patel: me
+21:24 patel: it was 8000
+21:25 divija has left IRC (Ping timeout: 246 seconds)
+21:25 patel: so is it same?
+21:25 kbhat: Oops. Sorry, 8000.
+21:25 patel: oh.
+21:25 vikrantwd: how is it the same on all our systems?
+21:26 kbhat: A port is a generic term used in computer networking, and for now, you can think of it as an entry / exit point to / from a network.
+21:26 divija has joined (31c874d1@gateway/web/freenode/ip.49.200.116.209)
+21:26 kbhat: vikrantwd: how is what the same?
+21:26 sangeetha: the port 8000
+21:26 vikrantwd: the 8000 http port
+21:27 kbhat: Ah. That's because the command itself is coded that way. ;)
+21:27 kbhat: See if you can give it different options!
+21:28 kbhat: Is everyone comfortable with using Linux commands? You must have come across it in C lab, if nothing else.
+21:28 kbhat: http://www.oliverelliott.org/article/computing/tut_unix/
+21:28 vikrantwd: so i got 8000 because of the python -m SimpleHTTPServer command?
+21:29 kbhat: Either way, being fluent in basic Unix is a must. The above can help with that.
+21:29 kbhat: vikrantwd: yes...
+21:29 vikrantwd: ok..
+21:30 kbhat: Wait. Do you still have a doubt there?
+21:30 sangeetha: so now is it like all of us have the same entry to the network?
+21:30 vikrantwd: exactly!
+21:30 kbhat: Oh, I see the confusion now. No! A port is something on *your* system.
+21:31 kbhat: Each of you has a certain range of ports.
+21:31 kbhat: https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports
+21:32 kbhat: Here's a list of common ports. chinmay_dd and I know this page well because of a particularly annoying networks assignment.
+21:32 chinmay_dd: :D DHCP ftw.
+21:32 kbhat: Anyway, vikrantwd and sangeetha, I hope that's clear now?
+21:32 sangeetha: yeah thanks :)
+21:32 vikrantwd: yes thanks
+21:33 kbhat: Everyone else: don't hesitate to stop / interrupt us if you have any sort of problem.
+21:33 chinmay_dd: So we had to listen for UDP packets on ports 67 and 68 and then analyse them. So ports are an important concept
+21:34 kbhat: And after adding on extra functionality to watch for DHCP packets, it turned out we didn't have to do it. >.< Still, time coding == time well spent. ^__^
+21:34 vikrantwd: so protocols are basically different ways to use the internet?
+21:35 chinmay_dd: They are different RULES.
+21:35 kbhat: ^ what he said.
+21:35 chinmay_dd: vikrantwd: it will get clear. Just dissolve it for now
+21:35 kbhat: They govern the working of different communications over the web. A general user doesn't worry about protocols.
+21:36 kbhat: In fact... https://github.com/alex/what-happens-when
+21:36 kbhat: I love this repository (find out what *that* is!) because it gives you a complete picture of what happens when you use your browser.
+21:37 PrabhanjanPM: kbhat that link is epic
+21:38 chinmay_dd: Remember, all you need to do is have interest :)
+21:38 kbhat: Now, come back to the 0.0.0.0:8000, and click on a link.
+21:39 kbhat: Check your terminal's output, and someone (one!) paste it here.
+21:39 sangeetha: [15/May/2015 21:39:19] "GET /Videos/ HTTP/1.1" 200 -
+21:40 patel: 127.0.0.1 - - [15/May/2015 21:17:34] "GET / HTTP/1.1" 200 -
+21:40 patel: 127.0.0.1 - - [15/May/2015 21:17:34] code 404, message File not found
+21:40 patel: 127.0.0.1 - - [15/May/2015 21:17:34] "GET /favicon.ico HTTP/1.1" 404 -
+21:40 patel: 127.0.0.1 - - [15/May/2015 21:17:34] code 404, message File not found
+21:40 patel: 127.0.0.1 - - [15/May/2015 21:17:34] "GET /favicon.ico HTTP/1.1" 404 -
+21:40 divija has left IRC (Ping timeout: 246 seconds)
+21:40 patel: 127.0.0.1 - - [15/May/2015 21:39:03] "GET /Downloads/ HTTP/1.1" 200 -
+21:40 chinmay_dd: oh god.
+21:40 kbhat: sangeetha: awesome. Want to take a shot at explaining what that means?
+21:40 kbhat: Try breaking it in parts, and tell us what each one is.
+21:41 divija has joined (31c874d1@gateway/web/freenode/ip.49.200.116.209)
+21:41 sangeetha: get must be a command ... mainly to get what is there in videos folder! using HTTP...
+21:41 sangeetha: no clue what 1.1 and 200 are for :(
+21:41 vikrantwd: using port 200 i guess
+21:42 patel: nope.i dont know
+21:42 sangeetha: yes may be that
+21:42 kbhat: GET is a type of HTTP request.
+21:43 kbhat: And as chinmay_dd will tell you now, 200 is *not* a port!
+21:43 patel: hey 0/ doubt
+21:43 kbhat: We're on port 8000 right now; how did you jump to 200? :P
+21:43 chinmay_dd: Okay guys, hello. I will continue
+21:43 kbhat: Go ahead, patel .
+21:43 patel: why did i get those lot of messages??
+21:43 divija: can someone plz retype what hpnd at 21:40,sorry.
+21:43 chinmay_dd: divija: we will be posting the logs. dont worry
+21:44 chinmay_dd: patel: what exactly did you click
+21:44 patel: downloads
+21:44 patel: it has jpegs,txts,tar.gz's
+21:44 chinmay_dd: And all of this popped up in the terminal?
+21:45 patel: yup
+21:46 chinmay_dd: hmm. interesting
+21:47 chinmay_dd: patel: let me get back to you on this later?
+21:47 patel: ok np
+21:47 chinmay_dd: so we were discussing
+21:47 divija has left IRC (Ping timeout: 246 seconds)
+21:47 chinmay_dd: GET is a HTTP request
+21:48 chinmay_dd: It is what it looks like.
+21:48 chinmay_dd: There is a request for 'GET'ing files
+21:48 chinmay_dd: apart from that we also have requests like POST, PATCH, etc
+21:48 isha97 has left IRC (Ping timeout: 246 seconds)
+21:49 chinmay_dd: READTIME: https://dev.opera.com/articles/http-lets-get-it-on/
+21:49 chinmay_dd: I give you 4 min
+21:53 vikrantwd: it doesn't say what 1.1 and 200 mean o.O
+21:53 chinmay_dd: chill da.
+21:53 chinmay_dd: I hope you guys are done
+21:53 patel: yup
+21:53 chinmay_dd: so lets see... k33r7h4n can you explain me what you have understood
+21:53 isha97 has joined (6a42a410@gateway/web/freenode/ip.106.66.164.16)
+21:54 chinmay_dd: k33r7h4n: are you there?
+21:54 k33r7h4n: get is used to make a request
+21:54 chinmay_dd: sorry, yeah carry on
+21:55 k33r7h4n: it's used to retrieve or obtain something from the server
+21:55 chinmay_dd: nice! ar16 what is 1.1
+21:56 ar16: i dont know
+21:56 chinmay_dd: no problem
+21:56 patel: can i try
+21:56 chinmay_dd: yeah sure
+21:56 patel: it is like a unique address or id assigned to the home page
+21:57 patel: its specific to home page.
+21:57 chinmay_dd: umm.. nope patel
+21:57 ar16: i googled it ...... HTTP/1.1 is the successor to HTTP/1.0
+21:57 chinmay_dd: 1.1 is the version number for the HTTP Protocol
+21:57 chinmay_dd: yes!
+21:57 kbhat: "which defined HTTP/1.1, the version of HTTP most commonly used today." <== from the Wikipedia entry on HTTP.
+21:58 sangeetha: doubt so Each time, we enter an HTTP URI in the browser address bar, we send a GET request to a server... we got it in our terminal also! does it mean our computers act as server cos of that simpleHTTPserver command?!
+21:58 kbhat: That's what we'd like to see; don't be a passive listener! Search, ask and learn. :)
+21:58 kbhat: sangeetha: yes.
+21:59 chinmay_dd: for q.1 -> it need not be GET always. It can be post, patch as well
+21:59 chinmay_dd: q.2 -> yes!
+21:59 sangeetha: oh :o cool!
+21:59 kbhat: Oh, I thought that was one question. Sorry.
+21:59 chinmay_dd: so now it brings us to 200
+22:00 chinmay_dd: more reading -> https://developer.mozilla.org/en-US/Learn/How_the_Internet_works
+22:02 kbhat: On a side note: Mozilla has excellent web-related resources.
+22:02 kbhat: I don't think the 200 question gets answered in that article...
+22:03 kbhat: 200 is the standard HTTP response code for "everything is OK".
+22:03 kbhat: Other codes you may have come across include 404, 500, etc.
+22:03 sangeetha: like 404 is not found :P
+22:03 kbhat: patel: you saw the 404.
+22:03 kbhat: sangeetha: yes.
+22:03 patel: yeah.i saw that
+22:03 patel: some favicon not found 404
+22:04 vikrantwd: just a small doubt. does the same thing as terminal happen on windows command prompt?
+22:04 kbhat: vikrantwd: not usually. Use Powershell instead.
+22:05 kbhat: For further reading on response codes, you can refer to this: https://dev.opera.com/articles/http-response-codes/
+22:06 kbhat: Now, I'd like you to properly read that Github repository page I linked to earlier. Broadly, it goes through what is known as the request-response cycle.
+22:07 vikrantwd: i've read that the internet was developed in unix
+22:07 kbhat: A client (here, your computer) makes a request to a server (the computer which has the web page you're requesting).
+22:07 kbhat: The server receives the request, fetches the data, and sends it back.
+22:07 kbhat: This gets rendered in your browser.
+22:08 kbhat: You'll often see the phrases "client-server model" and "request-response cycle"; sounds fancy, but boils down to the above.
+22:09 kbhat: Questions?
+22:09 patel: me
+22:09 sangeetha: in our case the comp requested itself to get a file?!
+22:09 kbhat: Yep.
+22:10 sangeetha: awesome :D
+22:10 patel: i read those response codes.so Finally we program the web page so as to reply with specific code?
+22:11 kbhat: *We* are not programming anything as of now.
+22:11 kbhat: These response codes are part of the standard HTTP protocol.
+22:11 k33r7h4n: to clarify, 200 is used to denote success of the entire process of receiving the get request and sending back data?
+22:11 kbhat: Of course, if and when you design a web application, you can provide custom web pages for error conditions like 404 and 500.
+22:11 patel: oh.But how does it kno if we moved permanently or temp.
+22:11 chinmay_dd: patel: the server is where the programming happens. HTTP is just the protocol. They are the ruls
+22:12 chinmay_dd: *rules
+22:13 isha97 has left IRC (Ping timeout: 246 seconds)
+22:13 chinmay_dd: So all clear about response codes?
+22:13 patel: ok
+22:13 patel: done
+22:14 chinmay_dd: You need to be clear as to why it is called a response code.
+22:14 vikrantwd: so http is like a compiler telling us wether our request lead to an error or if it was successful?
+22:14 chinmay_dd: You make a REQUEST to which the server gives a RESPONSE
+22:14 chinmay_dd: umm.. vikrantwd i would not say that
+22:15 chinmay_dd: HTTP is a protocol
+22:16 chinmay_dd: vaguely it is something like this
+22:16 chinmay_dd: say if you send the request in the form of a letter
+22:16 chinmay_dd: then HTTP is how you write the letter
+22:17 chinmay_dd: the format of the letter to be a little precose
+22:17 chinmay_dd: *precise
+22:17 chinmay_dd: we wont worry about the envelope as of now ;)
+22:17 vikrantwd: oh...that clears it thanks :D
+22:17 chinmay_dd: i will add some links to the resources page to make it clearer
+22:18 chinmay_dd: So.. any more doubts
+22:19 chinmay_dd: nope?.. cool so lets move over to some practice
+22:19 chinmay_dd: make account on -> hackthissite.org
+22:20 ashwin: done already.
+22:20 chinmay_dd: ashwin: cool.
+22:20 patel: cant.blocked
+22:20 patel: :(
+22:20 ashwin: i have an unrelated doubt
+22:20 chinmay_dd: So once you are done, i want you to join start the basic mission 1
+22:20 chinmay_dd: ashwin: go on
+22:20 ashwin: what's version control
+22:21 chinmay_dd: awesome question
+22:21 patel: hey chinmay_dd its blocked in UAE
+22:21 chinmay_dd: patel: use tor
+22:21 patel: ok.
+22:21 ashwin: and what is GIT used for?
+22:21 chinmay_dd: so what is version control
+22:21 chinmay_dd: lol
+22:22 chinmay_dd: GIT is a version control software
+22:22 chinmay_dd: let me explain
+22:22 kbhat: *git
+22:22 chinmay_dd: so suppose you are writing some really important code
+22:23 chinmay_dd: and everyday morning you make some changes to the code and then forget about it during th day
+22:23 chinmay_dd: one day you wake up and lose all of your memory
+22:24 chinmay_dd: you look at the code and dont realise how this was built up
+22:24 chinmay_dd: otherwise, suppose one day you want to go back to the code day before yesterday
+22:24 chinmay_dd: which was working fine but this one isnt
+22:25 chinmay_dd: this is where versioning comes into play
+22:25 chinmay_dd: you VERSION a state of your code time to time
+22:26 chinmay_dd: everyday I make changes and save a new version
+22:26 chinmay_dd: and then go to sleep
+22:26 chinmay_dd: the advantage of version control is i can go back to any of the versions i had before!
+22:27 ashwin: So, its a backup of all previous versions?
+22:27 chinmay_dd: and while i am creating newer versions i can give them some messages so as to identify them in the future
+22:27 sangeetha_ has joined (~sangeetha@116.202.130.28)
+22:27 chinmay_dd: umm.. over the top you can say so but not exactly
+22:27 chinmay_dd: version control lets you take pictures of your code time to time
+22:28 chinmay_dd: now ONE of the software which helps you do that is git
+22:28 chinmay_dd: *softwares
+22:28 chinmay_dd: now what is github
+22:29 chinmay_dd: suppose you are not working on your project alone but there are multiple people
+22:29 chinmay_dd: then whenever your friend wants to work on the project he will need the latest version of the code
+22:30 chinmay_dd: otherwise the changes you make and the changes he makes may CONFLICT
+22:30 chinmay_dd: that is where github comes in
+22:30 chinmay_dd: it is where you can store your git repositories
+22:31 chinmay_dd: or repos if you will
+22:31 sangeetha has left IRC (Ping timeout: 272 seconds)
+22:31 chinmay_dd: here you can have multiple branches as well. if you are working on different features
+22:31 chinmay_dd: then if it works the branch can be MERGED
+22:32 chinmay_dd: i hope you all have a vague idea of what version control i
+22:32 chinmay_dd: *is
+22:32 chinmay_dd: any doubts
+22:32 ashwin: Nope. Got a basic idea.
+22:32 chinmay_dd: everyone else?
+22:32 k33r7h4n: cool!
+22:32 kbhat: Here's a sample git repo: https://github.com/kbhat95/OpenBlek ; we used it extensively to keep track of each other's changes when we were doing our course project this sem.
+22:32 mohit__: Nope..
+22:33 chinmay_dd: mohit__: what did you not understand?
+22:33 chinmay_dd: do ask
+22:33 chinmay_dd: do you guys need a explicit git session>
+22:33 chinmay_dd: ?
+22:33 chinmay_dd: *an
+22:33 mohit__: No..I attended the web talk on git
+22:34 patel: we'll try first
+22:34 chinmay_dd: patel: cool!
+22:34 chinmay_dd: so lets do this
+22:34 chinmay_dd: has everyone created an account on hackthssite
+22:34 chinmay_dd: >
+22:34 chinmay_dd: ?
+22:35 mohit__: Yep
+22:35 chinmay_dd: forgive my typing skills
+22:35 chinmay_dd: nice. so i want all of you to create an account on github
+22:35 k33r7h4n: yeah
+22:35 patel: ok.
+22:35 chinmay_dd: and write a solution for the first basic 3 missions and create a git repo
+22:35 chinmay_dd: and push it to github by sunday
+22:36 chinmay_dd: everyone should mail their git handles in the channel by tomorrow evening
+22:36 chinmay_dd: *github
+22:36 patel: ok.
+22:36 chinmay_dd: cool everyonw?
+22:37 vikrantwd: ok
+22:37 mohit__: Yeah
+22:37 sandeepmenon: yes
+22:37 chinmay_dd: i want "yes" from all here
+22:37 amit705: yes
+22:37 patel: yes
+22:37 k33r7h4n: yes
+22:37 ar16: yes
+22:37 ashwin: yes
+22:37 eeshwar: yes
+22:37 kushal_g_: yes
+22:37 PrabhanjanPM: yes
+22:37 chinmay_dd: so... others i am assuming are afk.
+22:38 chinmay_dd: for now, start solving the chals
+22:38 chinmay_dd: any doubts pm me or k33r7h4n
+22:38 chinmay_dd: sorry
+22:38 chinmay_dd: kbhat:
+22:38 chinmay_dd: first 3
+22:38 chinmay_dd: go go go!
+22:38 chinmay_dd: dont look at solutions
+22:38 kbhat: k33r7h4n just had the shock of his life. :P
+22:38 k33r7h4n: lol yeah
+22:39 chinmay_dd: post your handles on the google group everyone
+22:40 sangeetha_: ok
+22:41 sangeetha_ has left ("Leaving")
+22:44 kbhat: Alright, so we'll wrap up this session.
+22:44 kbhat: I hope this timing suits everyone.
+22:44 patel: could u belate it a litte
+22:44 chinmay_dd: little more late?
+22:45 patel: like 20 min or so.
+22:45 chinmay_dd: patel: its fine if you join in late
+22:45 chinmay_dd: we dont want it to go beyond 11:15
+22:45 chinmay_dd: we will start by 8:465
+22:45 chinmay_dd: *45
+22:46 patel: oh.ok then.
+22:46 chinmay_dd: how many are on challenge 3 already?
+22:47 ar16: challenge 2
+22:47 patel: m unable to register.It will take time
+22:47 k33r7h4n: i finished all three
+22:47 chinmay_dd: k33r7h4n: cool.
+22:47 ar16: challenge 3 now
+22:47 chinmay_dd: so any doubts
+22:47 chinmay_dd: you can start reading about git and post detailed solutions
+22:48 chinmay_dd: i want you guys to write 2 lines about the question and 1-2 lines regarding your solution
+22:48 PMannari has joined (Prabhanjan@117.192.215.173)
+22:49 PMannari: isnt challenge 4 easier than challenge 3 ?
+22:49 chinmay_dd: PMannari: thats for you to decide
+22:49 sandeepmenon: i did the first three
+22:50 PrabhanjanPM has left IRC (Ping timeout: 276 seconds)
+22:50 ar16: done with three
+22:50 PrabhanjanPM has joined (Prabhanjan@117.192.199.167)
+22:51 chinmay_dd: start reading about git and write solutinos
+22:51 chinmay_dd: *solutions
+22:52 chinmay_dd: ping_all -> https://docs.google.com/spreadsheets/d/1w7wiCWRKBI1r7B2sXyk10rda6ajMVcsh6D4xCSwduBc/edit?usp=sharing
+22:52 chinmay_dd: put your git handles here
+22:52 chinmay_dd: github i mean
+22:53 PMannari has left IRC (Ping timeout: 264 seconds)
+22:57 eeshwar has left IRC (Quit: Leaving)
+22:58 ashwin has left IRC (Quit: Leaving)
+23:01 chinmay_dd: umm guys
+23:01 chinmay_dd: fill the spreadsheet
+23:03 PrabhanjanPM: well......it shows "there were problems creating your account"
+23:03 patel has left IRC (Read error: Connection reset by peer)
+23:03 chinmay_dd: try hard
+23:03 chinmay_dd: ;p
+23:03 PrabhanjanPM: lol fine !
+23:03 kushal_g_ has left IRC (Quit: Leaving)
+23:06 chinmay_dd: ar16, amit705, k33r7h4n please fill the doc
+23:07 amit705: done
+23:08 ar16: done
+23:08 chinmay_dd: cool
+23:09 keerthan has joined (~kss@117.192.165.46)
+23:09 mohit__: Done
+23:09 chinmay_dd: So i think we will end the first session here
+23:09 keerthan: could you post the doc link again please?
+23:10 chinmay_dd: i hope you guys liked it. if you want any changes in the pattern please inform us so
+23:10 chinmay_dd: https://docs.google.com/spreadsheets/d/1w7wiCWRKBI1r7B2sXyk10rda6ajMVcsh6D4xCSwduBc/edit?usp=sharing
+23:10 chinmay_dd: i will be posting the logs and the links in the morning
+23:10 chinmay_dd: you can always hang around on this channel
+23:11 chinmay_dd: and on #lug-nitk which is the official linux users group channel for NITK peeps
+23:11 chinmay_dd: now on monday we meet for....
+23:11 chinmay_dd: Crypto
+23:11 chinmay_dd: !
+23:11 chinmay_dd: nice
