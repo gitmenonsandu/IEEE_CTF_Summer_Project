@@ -1,0 +1,6 @@
+https://github.com/ctfs/write-ups-2014/blob/master/seccon-ctf-2014/shuffle/shuffle
+
+1. Download the file from the above link
+2. Access the ASM using radare2
+3. The flag is given as comment letter by letter on the right side of each line
+4. Flag : SECCON{Welcome to the SECCON 2014 CTF!}

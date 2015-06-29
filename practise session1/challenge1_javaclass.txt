@@ -1,0 +1,10 @@
+https://goo.gl/tAzw5M
+
+1. Extract the files given
+2. It is a java class
+3. An online decompiler is used to see the code . (www.showmycode.com)
+4. In the program we can see that the flag is obtained by xorring two strings given  in the variables of the code
+	4b64ca12ace755516c178f72d05d7061
+	ecd44646cfe5994ebeb35bf922e25dba
+5. Using an online xoring website, the flag is obtained
+	a7b08c546302cc1fd2a4d48bf2bf2ddb

@@ -1,0 +1,11 @@
+https://github.com/ctfs/write-ups-2014/blob/master/seccon-ctf-2014/get-the-key/nw100.pcap
+
+1. Download the .pcap from the above link.
+2. Open it in wireshark
+3. Go through the HTTP GET requests, and find the following
+	a. A url to a website   -  http://133.242.224.21:6809/nw100/
+	b. Username to login     -  seccon2014
+	c. Password to login     -  YourBattleField
+4. Go to the above url and login with the credentials
+5. See key.html to obtain the flag
+	SECCON{Basic_NW_Challenge_Done!}

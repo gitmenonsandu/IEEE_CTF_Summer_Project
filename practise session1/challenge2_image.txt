@@ -1,0 +1,12 @@
+https://goo.gl/HmNaRs
+
+1. The downloaded image is opened in gedit. Thhe last line showed as followes
+	K = "KhtgduHjj" Guess
+2. On googling image decoding + guess, a software called outguess is shown.
+3. To decode the image run the command
+	outguess -k "KhtgduHjj" -r img.jpg op.txt
+4. The text file contained the following cipher:
+	Jbhun_Hlbh_S0HhaQ_GU3_SyNnt0K_==
+5. By using an online shift cipher decoder, the plain text is obtained with key=13
+6. The decoded message was the flag
+	Wouha_Uyou_F0UunD_TH3_FlAag0X_== 
