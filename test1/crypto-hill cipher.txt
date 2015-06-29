@@ -1,0 +1,20 @@
+
+https://gist.github.com/kbhat95/816db6638f46fd7a4f2b
+
+Surprise! The technique you'll need for solving this one has not been covered in our sessions. By now, you should be able to look at the description of a basic cipher and be able to implement it, whether it's encryption or decryption.
+•	Cipher-text: KZGT
+•	Key: BBBBBCBCBBBABECD
+Hint: You might have to deal with something related to "a landform that extends above the surrounding terrain".
+Find out the corresponding plain-text!
+
+solution=>
+1. The hint suggests a landform that extends the surrounding terrain, which is a mountain, hill or delta.  On googling a cipher called hill cipher was found.
+	So its a hill cipher!!!
+2. It involves writing  the plain text and key in the form of matrices, filled with numbers corresponding the letters as A->0, B->1 .... Z->25.
+   the number of characters in the plaintext should be perfect square and that of the key is the root of it.
+3. The cipher text is calculated by multiplying the plaintext with the key and then mod 26.
+   converting the letters back to letters, we get the ciphertext.
+4. So plaintext x key = cipher
+   so plaintext = cipher x key-1 
+   following the steps, we get plain text as 'BLUE'.
+   so the answer is BLUE

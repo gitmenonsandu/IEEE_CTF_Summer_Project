@@ -5,7 +5,7 @@ The program asked to input a number, and two outputs were possible
 Goal: To get success
 
 0xa means 10.
-A function calculates the factorial(10!),
+A function sys.func() calculates the factorial(10!), using recursion
 this is divided by the number we enter and checked whether it is equal 0x15180 which in decimal is 86400.
 So 10!/number = 86400 => number = 10!/86400
 => number = 42
