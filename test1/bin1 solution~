@@ -1,0 +1,14 @@
+This program asks us to give command line arguments (three of them)
+The possible outputs are 
+1) Try harder
+2) You_have_found__an__answer._Find_the_logic_as_well
+3) Some numbers (explained below)
+
+The program checks if the three numbers are the coefficients of a quaadratic equation with real integer roots
+if They are coefficients of a quadratic equation with equal roots
+	then output(2) is shown
+else
+	the roots are displayed
+
+If the numbers are not as mentioned above, then try harder is displayed
+
